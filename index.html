@@ -1,52 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portfólio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header class="header-container">
-        <div class="header">
-            <!-- hambúrguer -->
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label>
-                    <div class="menu"></div>
-                    <nav class="menu-item">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Sobre</a>
-                            </li>
-                            <li>
-                                <a href="#">Projetos</a>
-                            </li>
-                        </ul>
-                    </nav>
+    <div id="loading" class="loader"></div>
+    <div id="content" class="hidden">
+        <header>
+            <div class="nome_header">
+                <h1>Diogo <span>Vieira</span></h1>
+            </div>
+            <nav>
+                <ul aria-label="Navegação primária" class="navegacao-primaria">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#resumo">Resumo</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+        </header>
+        <section aria-label="seção curriculo" class="section-div" id="home">
+            <div>
+                <h2>Hi There! I'm</h2>
+                <span id="texto" class="digitando" /></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestiae corporis ipsam voluptatum
+                    omnis repudiandae sequi numquam labore illum iusto.</p>
+                <a href="#">Dowload CV</a>
+            </div>
+            <img src="imgs/minha_foto.png" alt="ilustrativa imagem de uma pessoa" class="imagem_portifolio">
+        </section>
+        <main>
+            <article aria-label="seção sobre mim" class="sobre" id="sobre">
+                <div class="sobre_titulo">
+                    <h1>Sobre Mim</h1>
+                    <p>Perfil Profissional - Sobre Mim</p>
+                    <div aria-label="Seção apenas de ilustrações de botões">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <img src="imgs/minha_foto.png" alt="imagem de uma pessoa ilustrativa">
+                <div class="sobre_conteudo">
+                    <div class="sobre_texto" id="resumo">
+                        <h1>I'm Diogo Vieira</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni error possimus, provident
+                            vel,
+                            accusantium eligendi delectus officia dolore repellat neque modi eaque illo debitis
+                            reiciendis!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni error possimus, provident
+                            vel,
+                            accusantium eligendi delectus officia dolore repellat neque modi eaque illo debitis
+                            reiciendis!
+                            <br>
+                            <br>
+                            provident
+                            itaque reprehenderit molestiae distinctio repellendus necessitatibus quis autem in doloribus
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni error possimus, provident
+                            vel,
+                            accusantium eligendi delectus officia dolore repellat neque modi eaque illo debitis
+                            reiciendis!
+                        </p>
+                    </div>
+                    <div class="sobre_info">
+                        <p><i class="fa-solid fa-calendar-days"></i>Data de Nascimento: 05 jul 1996</p>
+                        <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Freelance: Disponivel</p>
+                        <p><i class="fa-solid fa-location-dot"></i>&nbspEndereço: RS, Brasil</p>
+                        <p><i class="fa-sharp fa-solid fa-globe"></i>&nbsp&nbspLinguagem: Portugues</p>
+                        <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileira</p>
+                        <p><i class="fa-solid fa-envelope"></i>&nbsp&nbspEmail: Diogovbortolotti@gmail.com</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <section class="services">
+            <div class="sobre_titulo">
+                <h1>Sobre Mim</h1>
+                <!-- <p>Perfil Profisssional - Sobre Mim</p> -->
+                <div aria-label="Seção apenas de ilustrações de botões">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-        </div>
-        <h1>Diogo Vieira</h1>
-        <h2>Full-Stack Developer</h2>
-        <div class="social-media">
-            <a href="#">Linkedin</a>
-            <a href="#">Github</a>
-        </div>
-    </header>
-    <main class="container"> </main>
-    <main class="footer"></main>
+            <div class="my_services">
+                <ul aria-label="Navegação secundaria">
+                    <li>
+                        <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                        <h3>Manutenção</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>Web Developer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-camera"></i>
+                        <h3>Designer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Analista de Dados</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-medal"></i>
+                        <h3>---</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-palette"></i>
+                        <h3>UX/UI</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, earum.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="my_resume">
+            <div class="sobre_titulo">
+                <h1>Meu Resumo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div aria-label="Seção apenas de ilustrações de botões">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <br></br>
+                </div>
+            </div>
+            <div class="resume_gerenico" id="formacao">
+                <h2 class="experience"><i class="fa-solid fa-handshake"></i>EXPERIENCIAS</h2>
+                <div class="experience_content">
+                    <div>
+                        <span>2017-2019</span>
+                        <h3>UI/UX - EMPRESA</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim</p>
+                    </div>
+                    <div>
+                        <span>2015-2017</span>
+                        <h3>Web Design - EMPRESA</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ex.</p>
+                    </div>
+                    <div>
+                        <span>2022-2023</span>
+                        <h3>Web Developer - EMPRESA</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ex.</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+                    </ul>
+                </div>
+                <h2 class="education"><i class="fa-solid fa-book"></i>ESTUDOS</h2>
+                <div class="education_content">
+                    <div>
+                        <span>2015 - 2019</span>
+                        <h3>Estacio - Pos Graduação</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim</p>
+                    </div>
+                    <div>
+                        <span>2019 - 2022</span>
+                        <h3>Uniasselvi - Graduação</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+                        <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cursos">
+
+            </div>
+        </section>
+        <section class="projects" id="portfolio">
+            <div class="sobre_titulo">
+                <h1>Meus Projetos</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div aria-label="Seção apenas de ilustrações de botões">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="project_models">
+                <ul class="project_navegacao" aria-label="Navegação entre modelos expecificos de projetos">
+                    <li class="all">Todos</li>
+                    <li class="documentacao">Documentações</li>
+                    <li class="back">Back-End</li>
+                    <li class="website">Websites</li>
+                </ul>
+            </div>
+            <div class="projects_armazenamento">
+                <ul aria-label="Navegação de projetos e websites">
+                    <li id="documentacao"><img src="imgs/Site.jpg" alt="Site"></li>
+                    <li id="documentacao"><img src="imgs/Site.jpg" alt="Site"></li>
+                    <li id="back"><img src="imgs/Site.jpg" alt="Site"></li>
+                    <li id="back"><img src="imgs/Site.jpg" alt="Site"></li>
+                    <li id="website"><img src="imgs/Site.jpg" alt="Site">
+                    </li>
+                    <li id="website"><img src="imgs/Site.jpg" alt="Site"></li>
+                    <li id="website"><img src="imgs/Site.jpg" alt="Site"></li>
+                    <li id="website"><img src="imgs/Site.jpg" alt="Site"></li>
+                </ul>
+            </div>
+            <a href="#">Mais Projetos</a>
+            <br></br>
+        </section>
+        <footer>
+            <div class="sobre_titulo" id="contato">
+                <h1>Minhas Redes Sociais</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quisquam sapiente dicta nesciunt a aut
+                    non
+                    expedita impedit ratione! Deleniti?</p>
+            </div>
+            <nav aria-label="navegação de links sociais">
+                <ul class="footer_sociais">
+                    <li><i class="fa-brands fa-facebook-f"><a href="#"></a></i></li>
+                    <li><i class="fa-brands fa-twitter"><a href="#"></a></i><a href="#"></a></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li><i class="fa-brands fa-instagram"><a href="#"></a></i></li>
+                    <li><i class="fa-brands fa-github-alt"><a href="#"></a></i></li>
+                </ul>
+            </nav>
+            <p class="footer_comercial">Criado em &copy; 2023</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
