@@ -148,7 +148,7 @@ window.addEventListener("load", function () {
     setTimeout(function () {
         loading.style.display = "none";
         content.style.display = "block";
-    }, 2000); // Atraso de 2 segundos (2000 milissegundos)
+    });
 });
 
 const palavras = ["Texto alternativo 1.", "Outra palavra.", "E mais uma frase."];
